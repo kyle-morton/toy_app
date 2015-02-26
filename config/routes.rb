@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  
+  #microposts model and views available
+  resources :microposts
+
+  #users model and views available
+  resources :users
+  
+  #reroute / to go directly to users
+  root 'users#index'
+  
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
